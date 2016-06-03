@@ -2,15 +2,15 @@ apply plugin: "groovy"
 apply plugin: "maven"
 
 group = "com.componentix"
-version = "1.0-SNAPSHOT"
-targetCompatibility = "1.6"
+version = "0.2"
+targetCompatibility = "1.7"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.0.5'
+    compile 'org.codehaus.groovy:groovy-all:2.4.6'
 }
 
 task demo(dependsOn: build, type: JavaExec) {
